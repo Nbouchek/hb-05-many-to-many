@@ -24,8 +24,8 @@ public class GetCoursesForNacerDemo {
             System.out.println("Starting transaction ... ");
             session.beginTransaction();
 
-            // get student Nacer from db
-            int studentId = 4;
+            // get student Adam from db
+            int studentId = 1;
             Student tempStudent = session.get(Student.class, studentId);
             System.out.println("\n\nLoaded student: " + tempStudent);
             System.out.println("Courses: " + tempStudent.getCourses() + "\n\n");
